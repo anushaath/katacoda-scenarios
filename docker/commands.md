@@ -6,6 +6,8 @@ docker run -it ubuntu bash
 
 docker build -t webserver-image:v1 .
 
+add to docker build "--no-cache=true" to disable cache
+
 docker run -d -p 80:80 webserver-image:v1
 
 curl -i http://docker
