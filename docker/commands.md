@@ -1,6 +1,8 @@
-## // Run commands inside bash
+## // Some useful Docker commands
 
-docker run -it ubuntu bash
+docker run -it ubuntu bash   // To run commands inside bash
+
+echo <file-name> >> .dockerignore     // useful to ignore large files in docker build
 
 ## //HTMLContainer scripts
 
