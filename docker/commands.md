@@ -2,7 +2,7 @@
 
 docker run -it ubuntu bash
 
-//HTMLContainer scripts
+##//HTMLContainer scripts
 
 docker build -t webserver-image:v1 .
 
@@ -12,7 +12,15 @@ docker run -d -p 80:80 webserver-image:v1
 
 curl -i http://docker
 
-//Build container
+##// NODEContainer
+
+docker build -t my-nodejs-app .
+
+docker run -d --name my-running-app -p 3000:3000 my-nodejs-app
+
+curl http://docker:3000
+
+##//Build container- Dockerfile commands
 
 FROM <container_name>
 
