@@ -33,3 +33,5 @@ EXPORT <port> <port>
 CMD ["","",""]
 
 or use ENTRYPOINT
+
+ONBUILD RUN ....   // Can be used when it should run as a base image
