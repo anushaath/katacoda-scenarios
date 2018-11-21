@@ -16,7 +16,7 @@ curl -i http://docker
 
 docker build -t my-nodejs-app .
 
-docker run -d --name my-running-app -p 3000:3000 my-nodejs-app
+docker run -d --name my-running-app -e NODE_ENV=production -p 3000:3000 my-nodejs-app
 
 curl http://docker:3000
 
